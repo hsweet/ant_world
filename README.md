@@ -5,16 +5,16 @@ You are an ant looking for the last bit of food.
 This is the basic code. We start by making a turtle object, called ant, and a window to be the ant's
 world. The ant wanders around aimlessly in the main loop. First forward or backward, then turns to a
 random new direction. I know, an ant is not a turtle, but it is close enough for this to work. Trust me.
-
-import turtle
-import random
-window=turtle.Screen()
-ant=turtle.Turtle()
-# An ant wanders around looking for food
-while True:
-ant.forward(random.randint(-20,80))
-ant.right(random.randint(-75, 120))
-
+```
+  import turtle
+  import random
+  window=turtle.Screen()
+  ant=turtle.Turtle()
+  
+  while True:
+  ant.forward(random.randint(-20,80))
+  ant.right(random.randint(-75, 120))
+```
 
 Once this is working, we can add some new functions to keep it from wandering off the screen, and
 know when it has found food.
@@ -30,9 +30,7 @@ Your assignment is to program the fittest Python Ant that can find the food befo
 head to head, on screen competition.
 Rules
 •
-•
-•
-•
+ 
 •
 Ant's are not especially smart, at least not a single ant. However, there a lot of them so they
 must be doing something right. Your ant can only wander about in her world until she stops at
